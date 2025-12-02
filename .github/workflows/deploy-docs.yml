@@ -22,6 +22,8 @@ jobs:
           pip install mkdocs mkdocs-material mkdocs-i18n mkdocs-jupyter jupyter nbconvert
       
       - name: Build MkDocs site
+        env:
+          JUPYTER_PLATFORM_DIRS: "1"
         run: mkdocs build
 
       - name: Create redirect
