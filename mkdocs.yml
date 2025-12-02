@@ -16,6 +16,9 @@ theme:
 nav:
   - 'en':
     - 'Home': 'en/index.md'
+    - 'Infra Core': 'en/infra-core.md'
+    - 'Examples':
+      - 'AWS Dev': 'en/examples/aws-dev.md'
     - 'AWS': 'en/aws.md'
     - 'GCP': 
       - 'Home': 'en/gcp/index.md'
@@ -26,6 +29,7 @@ nav:
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.ipynb'
       - 'Tailscale Mesh': 'notebooks/tailscale-mesh.ipynb'
       - 'Terraform Demo': 'notebooks/terraform-demo.ipynb'
   - 'ru':
