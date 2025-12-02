@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../infra-ci/">
+        <link rel="prev" href="../infra-network/">
       
       
-        <link rel="next" href="../gcp/">
+        <link rel="next" href="../infra-secrets/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>AWS - Infra Docs</title>
+        <title>Monitoring - Infra Docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-infrastructure" class="md-skip">
+        <a href="#infra-monitoring-observability-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS
+              Monitoring
             
           </span>
         </div>
@@ -539,8 +539,6 @@
                 
   
   
-    
-  
   
   
     
@@ -551,11 +549,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
         
           
           <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
@@ -576,7 +574,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -591,35 +589,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
         
   
   
@@ -635,341 +608,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#aws-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AWS Infrastructure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="AWS Infrastructure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Purpose
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repository-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📁 Repository Structure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Quick Start
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-bootstrap-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Bootstrap Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-deploy-main-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Deploy Main Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Architecture
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basic Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Modules Usage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📦 Modules Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deploy-ec2-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy EC2 Instance
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-vpc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy VPC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-rds-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy RDS Database
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔒 Security Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔒 Security Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#security-groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iam-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IAM Roles
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Integration Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔗 Integration Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-monitoring
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-secrets
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔧 Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Connect to Instance
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backup-and-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup and Recovery
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 Documentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-repositories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Related Repositories
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1185,6 +823,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1195,11 +835,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
           <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
@@ -1220,7 +860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1235,10 +875,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../infra-monitoring/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1254,6 +919,385 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infra-monitoring-observability-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        infra-monitoring: Observability Stack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="infra-monitoring: Observability Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 Repository Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Prometheus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Grafana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-loki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Loki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-exporters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exporters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Quick Start
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-development-with-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local Development with Docker Compose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-deployment-with-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Production Deployment with Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafana-dashboards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📈 Grafana Dashboards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Grafana Dashboards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-infrastructure-overview-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Infrastructure Overview Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-application-performance-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Application Performance Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-kubernetes-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Kubernetes Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cost-monitoring-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cost Monitoring Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alerting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔔 Alerting Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔔 Alerting Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-alert-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Alert Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alertmanager-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AlertManager Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Integration Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Integration Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-infra-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With infra-aws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-infra-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With infra-k8s
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-infra-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With infra-gcp
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛡️ Security Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ Security Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tlsssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLS/SSL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Related Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3715,15 +3759,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-infrastructure" class="md-nav__link">
+  <a href="#infra-monitoring-observability-stack" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Infrastructure
+        infra-monitoring: Observability Stack
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AWS Infrastructure">
+    <nav class="md-nav" aria-label="infra-monitoring: Observability Stack">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3749,6 +3793,67 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Prometheus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Grafana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-loki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Loki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-exporters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exporters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3761,10 +3866,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prerequisites" class="md-nav__link">
+  <a href="#local-development-with-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Prerequisites
+        Local Development with Docker Compose
       
     </span>
   </a>
@@ -3772,21 +3877,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-bootstrap-infrastructure" class="md-nav__link">
+  <a href="#production-deployment-with-terraform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Bootstrap Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-deploy-main-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Deploy Main Infrastructure
+        Production Deployment with Terraform
       
     </span>
   </a>
@@ -3799,22 +3893,55 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#grafana-dashboards" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Architecture
+        📈 Grafana Dashboards
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏗️ Architecture">
+    <nav class="md-nav" aria-label="📈 Grafana Dashboards">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-architecture" class="md-nav__link">
+  <a href="#1-infrastructure-overview-dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Architecture
+        1. Infrastructure Overview Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-application-performance-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Application Performance Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-kubernetes-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Kubernetes Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cost-monitoring-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cost Monitoring Dashboard
       
     </span>
   </a>
@@ -3827,22 +3954,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modules-usage" class="md-nav__link">
+  <a href="#alerting-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📦 Modules Usage
+        🔔 Alerting Rules
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📦 Modules Usage">
+    <nav class="md-nav" aria-label="🔔 Alerting Rules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deploy-ec2-instance" class="md-nav__link">
+  <a href="#example-alert-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploy EC2 Instance
+        Example Alert Rules
       
     </span>
   </a>
@@ -3850,60 +3977,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deploy-vpc" class="md-nav__link">
+  <a href="#alertmanager-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploy VPC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-rds-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy RDS Database
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔒 Security Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔒 Security Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#security-groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iam-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IAM Roles
+        AlertManager Configuration
       
     </span>
   </a>
@@ -3928,10 +4005,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#with-infra-monitoring" class="md-nav__link">
+  <a href="#with-infra-aws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        With infra-monitoring
+        With infra-aws
       
     </span>
   </a>
@@ -3939,10 +4016,60 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#with-infra-secrets" class="md-nav__link">
+  <a href="#with-infra-k8s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        With infra-secrets
+        With infra-k8s
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-infra-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With infra-gcp
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛡️ Security Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ Security Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tlsssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLS/SSL
       
     </span>
   </a>
@@ -3962,45 +4089,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔧 Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Connect to Instance
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backup-and-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup and Recovery
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -4051,364 +4139,342 @@
   
 
 
-  <h1>AWS</h1>
+  <h1>Monitoring</h1>
 
-<h2 id="aws-infrastructure">AWS Infrastructure</h2>
-<p><strong>infra-aws</strong> manages AWS infrastructure deployment using Terraform modules from infra-core, providing standardized cloud resource provisioning.</p>
+<h2 id="infra-monitoring-observability-stack">infra-monitoring: Observability Stack</h2>
+<p><strong>infra-monitoring</strong> provides a complete observability solution with metrics collection, logging, and visualization for cloud infrastructure.</p>
 <h3 id="purpose">🎯 Purpose</h3>
-<p>Deploy and manage AWS infrastructure:</p>
+<p>Deploy and manage a comprehensive monitoring stack:</p>
 <ul>
-<li><strong>EC2 Instances</strong> - Virtual machine deployment</li>
-<li><strong>VPC Configuration</strong> - Network infrastructure</li>
-<li><strong>RDS Databases</strong> - Managed databases</li>
-<li><strong>EKS Clusters</strong> - Kubernetes on AWS</li>
-<li><strong>S3 Storage</strong> - Object storage</li>
-<li><strong>IAM Policies</strong> - Access management</li>
+<li><strong>Prometheus</strong> - Metrics collection and alerting</li>
+<li><strong>Grafana</strong> - Visualization and dashboards</li>
+<li><strong>Loki</strong> - Log aggregation and querying</li>
+<li><strong>Exporters</strong> - Node, cloud, and application metrics</li>
 </ul>
 <h3 id="repository-structure">📁 Repository Structure</h3>
-<pre><code>infra-aws/
-├── bootstrap/              # Initial AWS setup
-│   ├── iam/               # IAM roles and policies
-│   ├── s3/                # S3 buckets for Terraform state
-│   └── dynamodb/          # DynamoDB for state locking
-├── infra/                 # Main infrastructure
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── terraform.tfvars.example
-│   ├── backend.tf
-│   └── outputs.tf
-├── ops/                   # Operational scripts
-│   ├── ssh_config.example
-│   └── scripts/
-├── ide/                   # IDE configurations
+<pre><code>infra-monitoring/
+├── modules/
+│   ├── prometheus/         # Prometheus setup
+│   ├── grafana/            # Grafana with dashboards
+│   ├── loki/               # Loki log aggregation
+│   └── exporters/          # Various exporters
+├── environments/
+│   ├── dev/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── terraform.tfvars.example
+│   │   └── backend.tf
+│   └── prod/
+│       └── ...
+├── dashboards/             # Pre-configured Grafana dashboards
+├── alert_rules.yml         # Prometheus alerting rules
+├── docker-compose.yml      # Local development setup
 └── README.md
 </code></pre>
+<h3 id="components">📊 Components</h3>
+<h4 id="1-prometheus">1. Prometheus</h4>
+<p>Time-series metrics database with powerful querying and alerting.</p>
+<p><strong>Features:</strong>
+- Multi-dimensional metrics
+- PromQL query language
+- Alert manager integration
+- Service discovery
+- Long-term storage</p>
+<p><strong>Example Configuration:</strong></p>
+<pre><code class="language-yaml"># prometheus.yml
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  - job_name: 'gcp-monitoring'
+    static_configs:
+      - targets: ['gcp-exporter:9090']
+</code></pre>
+<h4 id="2-grafana">2. Grafana</h4>
+<p>Visualization and analytics platform.</p>
+<p><strong>Features:</strong>
+- Rich dashboards
+- Multiple data sources
+- Alerting
+- User management
+- Dashboard versioning</p>
+<p><strong>Pre-configured Dashboards:</strong>
+- <strong>Infrastructure Overview</strong> - CPU, Memory, Disk, Network
+- <strong>Application Metrics</strong> - Request rates, latencies, errors
+- <strong>Kubernetes Monitoring</strong> - Pod/node metrics
+- <strong>Database Performance</strong> - Query performance, connections
+- <strong>Cloud Costs</strong> - Cost tracking and optimization</p>
+<h4 id="3-loki">3. Loki</h4>
+<p>Horizontally-scalable log aggregation system.</p>
+<p><strong>Features:</strong>
+- Label-based indexing
+- LogQL query language
+- Integration with Grafana
+- Low cost storage
+- Promtail agent</p>
+<p><strong>Example Configuration:</strong></p>
+<pre><code class="language-yaml"># loki-config.yaml
+auth_enabled: false
+
+server:
+  http_listen_port: 3100
+
+ingester:
+  lifecycler:
+    address: 127.0.0.1
+    ring:
+      kvstore:
+        store: inmemory
+      replication_factor: 1
+  chunk_idle_period: 5m
+  chunk_retain_period: 30s
+
+schema_config:
+  configs:
+    - from: 2020-10-24
+      store: boltdb
+      object_store: filesystem
+      schema: v11
+      index:
+        prefix: index_
+        period: 168h
+</code></pre>
+<h4 id="4-exporters">4. Exporters</h4>
+<p>Collect metrics from various sources.</p>
+<p><strong>Available Exporters:</strong>
+- <strong>Node Exporter</strong> - System metrics (CPU, memory, disk)
+- <strong>cAdvisor</strong> - Container metrics
+- <strong>Blackbox Exporter</strong> - Endpoint monitoring
+- <strong>Cloud Exporters</strong> - AWS CloudWatch, GCP Monitoring
+- <strong>Database Exporters</strong> - PostgreSQL, MySQL, Redis</p>
 <h3 id="quick-start">🚀 Quick Start</h3>
-<h4 id="1-prerequisites">1. Prerequisites</h4>
-<ul>
-<li><a href="https://terraform.io/downloads">Terraform</a> &gt;= 1.5.0</li>
-<li>AWS CLI configured with credentials</li>
-<li>Existing EC2 key pair (or create new one)</li>
-</ul>
-<pre><code class="language-bash"># Configure AWS CLI
-aws configure
-
-# Verify access
-aws sts get-caller-identity
-</code></pre>
-<h4 id="2-bootstrap-infrastructure">2. Bootstrap Infrastructure</h4>
+<h4 id="local-development-with-docker-compose">Local Development with Docker Compose</h4>
 <pre><code class="language-bash"># Clone repository
-git clone https://github.com/v-grand/infra-aws.git
-cd infra-aws
+git clone https://github.com/v-grand/infra-monitoring.git
+cd infra-monitoring
 
-# Bootstrap (first time only)
-cd bootstrap
-terraform init
-terraform apply
+# Configure environment
+cp .env.example .env
+# Edit .env with your settings
 
-# This creates:
-# - S3 bucket for Terraform state
-# - DynamoDB table for state locking
-# - Basic IAM roles
+# Start stack
+docker-compose up -d
+
+# Access services
+# Grafana: http://localhost:3000 (admin/admin)
+# Prometheus: http://localhost:9090
+# Loki: http://localhost:3100
 </code></pre>
-<h4 id="3-deploy-main-infrastructure">3. Deploy Main Infrastructure</h4>
-<pre><code class="language-bash">cd ../infra
-
-# Copy example configuration
+<h4 id="production-deployment-with-terraform">Production Deployment with Terraform</h4>
+<pre><code class="language-bash">cd environments/prod
 cp terraform.tfvars.example terraform.tfvars
 
-# Edit configuration
-nano terraform.tfvars
-</code></pre>
-<p><strong>terraform.tfvars example:</strong></p>
-<pre><code class="language-hcl"># AWS Configuration
-aws_region = &quot;us-east-1&quot;
-key_name   = &quot;my-ec2-key&quot;
-
-# Network Configuration
-vpc_cidr             = &quot;10.0.0.0/16&quot;
-availability_zones   = [&quot;us-east-1a&quot;, &quot;us-east-1b&quot;]
-public_subnet_cidrs  = [&quot;10.0.1.0/24&quot;, &quot;10.0.2.0/24&quot;]
-private_subnet_cidrs = [&quot;10.0.10.0/24&quot;, &quot;10.0.11.0/24&quot;]
-
-# SSH Access
-allowed_ssh_cidr = &quot;YOUR_IP/32&quot;  # Get with: curl ifconfig.me
-
-# Application
-repo_url    = &quot;https://github.com/your-org/your-app.git&quot;
-repo_branch = &quot;main&quot;
-
-# Tags
-tags = {
-  Environment = &quot;dev&quot;
-  Project     = &quot;my-app&quot;
-  ManagedBy   = &quot;terraform&quot;
-}
-</code></pre>
-<pre><code class="language-bash"># Deploy
+# Edit terraform.tfvars
 terraform init
 terraform plan
 terraform apply
 </code></pre>
-<h3 id="architecture">🏗️ Architecture</h3>
-<h4 id="basic-architecture">Basic Architecture</h4>
-<pre><code>┌─────────────────────────────────────────────┐
-│              AWS Region (us-east-1)         │
-│  ┌────────────────────────────────────────┐ │
-│  │           VPC (10.0.0.0/16)            │ │
-│  │  ┌──────────────┬──────────────────┐  │ │
-│  │  │   AZ-1a      │      AZ-1b       │  │ │
-│  │  │              │                  │  │ │
-│  │  │  Public      │    Public        │  │ │
-│  │  │  Subnet      │    Subnet        │  │ │
-│  │  │  10.0.1/24   │    10.0.2/24     │  │ │
-│  │  │  ┌────────┐  │   ┌────────┐     │  │ │
-│  │  │  │  EC2   │  │   │  EC2   │     │  │ │
-│  │  │  │  ALB   │  │   │  ALB   │     │  │ │
-│  │  │  └────────┘  │   └────────┘     │  │ │
-│  │  │              │                  │  │ │
-│  │  │  Private     │    Private       │  │ │
-│  │  │  Subnet      │    Subnet        │  │ │
-│  │  │  10.0.10/24  │    10.0.11/24    │  │ │
-│  │  │  ┌────────┐  │   ┌────────┐     │  │ │
-│  │  │  │  RDS   │  │   │  RDS   │     │  │ │
-│  │  │  │(Primary)│  │   │(Standby)│    │  │ │
-│  │  │  └────────┘  │   └────────┘     │  │ │
-│  │  └──────────────┴──────────────────┘  │ │
-│  └────────────────────────────────────────┘ │
-└─────────────────────────────────────────────┘
+<h3 id="grafana-dashboards">📈 Grafana Dashboards</h3>
+<h4 id="1-infrastructure-overview-dashboard">1. Infrastructure Overview Dashboard</h4>
+<p>Monitors overall infrastructure health:
+- CPU usage across all instances
+- Memory utilization
+- Disk I/O and capacity
+- Network traffic
+- System load averages</p>
+<p><strong>Import ID:</strong> <code>1860</code> (Node Exporter Full)</p>
+<h4 id="2-application-performance-dashboard">2. Application Performance Dashboard</h4>
+<p>Tracks application metrics:
+- Request rate and latency
+- Error rates (4xx, 5xx)
+- Database query performance
+- Cache hit ratios
+- Queue depths</p>
+<h4 id="3-kubernetes-dashboard">3. Kubernetes Dashboard</h4>
+<p>Kubernetes cluster monitoring:
+- Node status and resources
+- Pod health and restarts
+- Deployment status
+- Resource quotas
+- Persistent volume usage</p>
+<p><strong>Import ID:</strong> <code>15759</code> (Kubernetes cluster monitoring)</p>
+<h4 id="4-cost-monitoring-dashboard">4. Cost Monitoring Dashboard</h4>
+<p>Track cloud spending:
+- Daily/monthly costs by service
+- Resource utilization vs. cost
+- Cost predictions
+- Budget alerts</p>
+<h3 id="alerting-rules">🔔 Alerting Rules</h3>
+<h4 id="example-alert-rules">Example Alert Rules</h4>
+<pre><code class="language-yaml"># alert_rules.yml
+groups:
+  - name: infrastructure_alerts
+    interval: 30s
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode=&quot;idle&quot;}[5m])) * 100) &gt; 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: &quot;High CPU usage on {{ $labels.instance }}&quot;
+          description: &quot;CPU usage is above 80% (current value: {{ $value }}%)&quot;
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 &gt; 90
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: &quot;High memory usage on {{ $labels.instance }}&quot;
+          description: &quot;Memory usage is above 90% (current value: {{ $value }}%)&quot;
+
+      - alert: DiskSpaceLow
+        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 &lt; 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: &quot;Low disk space on {{ $labels.instance }}&quot;
+          description: &quot;Disk space is below 10% (current value: {{ $value }}%)&quot;
+
+      - alert: ServiceDown
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: &quot;Service {{ $labels.job }} is down&quot;
+          description: &quot;{{ $labels.instance }} has been down for more than 2 minutes&quot;
 </code></pre>
-<h3 id="modules-usage">📦 Modules Usage</h3>
-<h4 id="deploy-ec2-instance">Deploy EC2 Instance</h4>
-<pre><code class="language-hcl">module &quot;web_server&quot; {
-  source = &quot;github.com/v-grand/infra-core//modules/vm&quot;
+<h4 id="alertmanager-configuration">AlertManager Configuration</h4>
+<pre><code class="language-yaml"># alertmanager.yml
+global:
+  resolve_timeout: 5m
 
-  cloud         = &quot;aws&quot;
-  instance_name = &quot;web-server&quot;
-  instance_type = &quot;t3.medium&quot;
+route:
+  group_by: ['alertname', 'cluster', 'service']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 12h
+  receiver: 'default'
+  routes:
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+    - match:
+        severity: warning
+      receiver: 'warning-alerts'
 
-  # Network
-  subnet_id          = module.vpc.public_subnet_ids[0]
-  security_group_ids = [aws_security_group.web.id]
+receivers:
+  - name: 'default'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#alerts'
 
-  # SSH
-  key_name = var.key_name
+  - name: 'critical-alerts'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#critical-alerts'
+    pagerduty_configs:
+      - service_key: 'YOUR_PAGERDUTY_KEY'
 
-  # User data
-  user_data = templatefile(&quot;${path.module}/scripts/user-data.sh&quot;, {
-    repo_url = var.repo_url
-  })
-
-  tags = merge(var.tags, {
-    Role = &quot;web-server&quot;
-  })
-}
+  - name: 'warning-alerts'
+    slack_configs:
+      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
+        channel: '#warnings'
 </code></pre>
-<h4 id="deploy-vpc">Deploy VPC</h4>
-<pre><code class="language-hcl">module &quot;vpc&quot; {
-  source = &quot;github.com/v-grand/infra-network//modules/vpc-aws&quot;
-
-  vpc_cidr           = var.vpc_cidr
-  availability_zones = var.availability_zones
-
-  public_subnet_cidrs  = var.public_subnet_cidrs
-  private_subnet_cidrs = var.private_subnet_cidrs
-
-  enable_nat_gateway   = true
-  enable_dns_hostnames = true
-
-  tags = var.tags
-}
-</code></pre>
-<h4 id="deploy-rds-database">Deploy RDS Database</h4>
-<pre><code class="language-hcl">module &quot;database&quot; {
-  source = &quot;github.com/v-grand/infra-core//modules/db&quot;
-
-  cloud = &quot;aws&quot;
-
-  # Instance configuration
-  identifier     = &quot;myapp-db&quot;
-  engine         = &quot;postgres&quot;
-  engine_version = &quot;15.3&quot;
-  instance_class = &quot;db.t3.medium&quot;
-
-  # Storage
-  allocated_storage     = 100
-  max_allocated_storage = 500
-  storage_encrypted     = true
-
-  # Database
-  db_name  = &quot;myapp&quot;
-  username = &quot;admin&quot;
-  password = var.db_password  # Use secrets manager
-
-  # Network
-  vpc_id     = module.vpc.vpc_id
-  subnet_ids = module.vpc.private_subnet_ids
-
-  # Security
-  allowed_cidr_blocks = [var.vpc_cidr]
-
-  # Backup
-  backup_retention_period = 7
-  backup_window          = &quot;03:00-04:00&quot;
-  maintenance_window     = &quot;mon:04:00-mon:05:00&quot;
-
-  # High Availability
-  multi_az               = true
-  deletion_protection    = true
-
-  tags = var.tags
-}
-</code></pre>
-<h3 id="security-configuration">🔒 Security Configuration</h3>
-<h4 id="security-groups">Security Groups</h4>
-<pre><code class="language-hcl"># Web server security group
-resource &quot;aws_security_group&quot; &quot;web&quot; {
-  name        = &quot;web-server-sg&quot;
-  description = &quot;Security group for web servers&quot;
-  vpc_id      = module.vpc.vpc_id
-
-  # HTTP
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  # HTTPS
-  ingress {
-    from_port   = 443
-    to_port     = 443
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  # SSH (restricted)
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [var.allowed_ssh_cidr]
-  }
-
-  # Outbound
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = &quot;-1&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  tags = merge(var.tags, {
-    Name = &quot;web-server-sg&quot;
-  })
-}
-</code></pre>
-<h4 id="iam-roles">IAM Roles</h4>
-<pre><code class="language-hcl"># EC2 instance role
-resource &quot;aws_iam_role&quot; &quot;ec2_role&quot; {
-  name = &quot;ec2-instance-role&quot;
-
-  assume_role_policy = jsonencode({
-    Version = &quot;2012-10-17&quot;
-    Statement = [
-      {
-        Action = &quot;sts:AssumeRole&quot;
-        Effect = &quot;Allow&quot;
-        Principal = {
-          Service = &quot;ec2.amazonaws.com&quot;
-        }
-      }
-    ]
-  })
-}
-
-# Attach policies
-resource &quot;aws_iam_role_policy_attachment&quot; &quot;ec2_s3_access&quot; {
-  role       = aws_iam_role.ec2_role.name
-  policy_arn = &quot;arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess&quot;
-}
-</code></pre>
-<h3 id="integration-examples">🔗  Integration Examples</h3>
-<h4 id="with-infra-monitoring">With infra-monitoring</h4>
-<pre><code class="language-hcl"># Deploy monitoring
+<h3 id="integration-examples">🔗 Integration Examples</h3>
+<h4 id="with-infra-aws">With infra-aws</h4>
+<pre><code class="language-hcl"># Deploy monitoring to AWS
 module &quot;monitoring&quot; {
   source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
 
-  # AWS specific configuration
   vpc_id    = module.vpc.vpc_id
   subnet_id = module.vpc.private_subnet_ids[0]
 
   instance_type = &quot;t3.medium&quot;
 
-  # Scrape targets
   scrape_targets = [
-    module.web_server.instance_private_ip
+    &quot;http://app-server-1:9100&quot;,
+    &quot;http://app-server-2:9100&quot;
   ]
 }
 </code></pre>
-<h4 id="with-infra-secrets">With infra-secrets</h4>
-<pre><code class="language-hcl"># Store secrets in AWS Secrets Manager
-module &quot;secrets&quot; {
-  source = &quot;github.com/v-grand/infra-secrets//modules/aws-secrets&quot;
+<h4 id="with-infra-k8s">With infra-k8s</h4>
+<pre><code class="language-hcl"># Deploy to Kubernetes
+module &quot;prometheus_helm&quot; {
+  source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
 
-  secrets = {
-    db_password = {
-      secret_string           = var.db_password
-      recovery_window_in_days = 30
-    }
-  }
+  deploy_to_k8s = true
+  namespace      = &quot;monitoring&quot;
+
+  storage_class = &quot;standard&quot;
+  storage_size  = &quot;50Gi&quot;
+
+  grafana_enabled     = true
+  alertmanager_enabled = true
 }
+</code></pre>
+<h4 id="with-infra-gcp">With infra-gcp</h4>
+<pre><code class="language-hcl"># Integrate with GCP monitoring
+module &quot;gcp_monitoring&quot; {
+  source = &quot;github.com/v-grand/infra-monitoring//modules/gcp-exporter&quot;
+
+  project_id = var.gcp_project_id
+
+  export_metrics = [
+    &quot;compute.googleapis.com/instance/cpu/utilization&quot;,
+    &quot;compute.googleapis.com/instance/network/received_bytes_count&quot;
+  ]
+}
+</code></pre>
+<h3 id="security-configuration">🛡️ Security Configuration</h3>
+<h4 id="authentication">Authentication</h4>
+<pre><code class="language-hcl"># Grafana authentication
+environment = {
+  GF_AUTH_GENERIC_OAUTH_ENABLED      = &quot;true&quot;
+  GF_AUTH_GENERIC_OAUTH_CLIENT_ID    = var.oauth_client_id
+  GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET = var.oauth_client_secret
+  GF_AUTH_GENERIC_OAUTH_SCOPES       = &quot;openid email profile&quot;
+}
+</code></pre>
+<h4 id="tlsssl">TLS/SSL</h4>
+<pre><code class="language-yaml"># Prometheus with TLS
+tls_config:
+  cert_file: /etc/prometheus/certs/prometheus.crt
+  key_file: /etc/prometheus/certs/prometheus.key
+  client_ca_file: /etc/prometheus/certs/ca.crt
 </code></pre>
 <h3 id="best-practices">📚 Best Practices</h3>
 <ol>
-<li><strong>Multi-AZ Deployment</strong> - Deploy across multiple availability zones</li>
-<li><strong>Encrypted Storage</strong> - Enable encryption for EBS and RDS</li>
-<li><strong>IAM Least Privilege</strong> - Minimal required permissions</li>
-<li><strong>VPC Flow Logs</strong> - Enable for network monitoring</li>
-<li><strong>CloudWatch Alarms</strong> - Set up monitoring alerts</li>
-<li><strong>Backup Strategy</strong> - Regular automated snapshots</li>
-<li><strong>Cost Optimization</strong> - Use reserved instances, spot instances</li>
-<li><strong>Tagging Strategy</strong> - Consistent resource tagging</li>
+<li><strong>Retention Policies</strong> - Configure appropriate data retention</li>
+<li><strong>High Availability</strong> - Deploy redundant Prometheus instances</li>
+<li><strong>Storage</strong> - Use persistent volumes for data</li>
+<li><strong>Scrape Intervals</strong> - Balance between granularity and load</li>
+<li><strong>Label Cardinality</strong> - Avoid high-cardinality labels</li>
+<li><strong>Dashboard Organization</strong> - Use folders and tags</li>
 </ol>
-<h3 id="operations">🔧 Operations</h3>
-<h4 id="connect-to-instance">Connect to Instance</h4>
-<pre><code class="language-bash"># Get instance IP
-terraform output instance_public_ip
-
-# SSH connection
-ssh -i ~/.ssh/your-key.pem ec2-user@INSTANCE_IP
-
-# Or use SSH config
-cp ops/ssh_config.example ~/.ssh/config
-# Edit config with your IP
-ssh devml
-</code></pre>
-<h4 id="backup-and-recovery">Backup and Recovery</h4>
-<pre><code class="language-bash"># Create snapshot
-aws ec2 create-snapshot \
-  --volume-id vol-xxxxx \
-  --description &quot;Manual backup&quot;
-
-# Create AMI
-aws ec2 create-image \
-  --instance-id i-xxxxx \
-  --name &quot;web-server-backup-$(date +%Y%m%d)&quot;
-</code></pre>
 <h3 id="documentation">📖 Documentation</h3>
 <ul>
-<li><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected</a></li>
-<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs">Terraform AWS Provider</a></li>
-<li><a href="https://docs.aws.amazon.com/cli/">AWS CLI Reference</a></li>
+<li><a href="https://prometheus.io/docs/">Prometheus Documentation</a></li>
+<li><a href="https://grafana.com/docs/">Grafana Documentation</a></li>
+<li><a href="https://grafana.com/docs/loki/">Loki Documentation</a></li>
 </ul>
 <h3 id="related-repositories">🔗 Related Repositories</h3>
 <ul>
-<li><a href="../infra-core/">infra-core</a> - Reusable Terraform modules</li>
+<li><a href="../infra-core/">infra-core</a> - Infrastructure modules</li>
+<li><a href="https://github.com/v-grand/infra-k8s">infra-k8s</a> - Kubernetes integration</li>
 <li><a href="../infra-network/">infra-network</a> - Network configuration</li>
-<li><a href="../infra-monitoring/">infra-monitoring</a> - Monitoring setup</li>
-<li><a href="../infra-secrets/">infra-secrets</a> - Secrets management</li>
 </ul>
 
 

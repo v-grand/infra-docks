@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../infra-ci/">
+        <link rel="prev" href="../infra-template/">
       
       
-        <link rel="next" href="../gcp/">
+        <link rel="next" href="../aws/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>AWS - Infra Docs</title>
+        <title>Infra CI - Infra Docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-infrastructure" class="md-skip">
+        <a href="#infra-ci-cicd-workflows" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS
+              Infra CI
             
           </span>
         </div>
@@ -397,6 +397,8 @@
                 
   
   
+    
+  
   
   
     
@@ -407,11 +409,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
@@ -432,7 +434,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -503,94 +505,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../infra-ci/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Infra CI
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cloud Infrastructure
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Cloud Infrastructure
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
     
   
   
@@ -608,7 +522,7 @@
   <span class="md-ellipsis">
     
   
-    AWS
+    Infra CI
   
 
     
@@ -626,7 +540,7 @@
   <span class="md-ellipsis">
     
   
-    AWS
+    Infra CI
   
 
     
@@ -650,15 +564,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-infrastructure" class="md-nav__link">
+  <a href="#infra-ci-cicd-workflows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Infrastructure
+        infra-ci: CI/CD Workflows
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AWS Infrastructure">
+    <nav class="md-nav" aria-label="infra-ci: CI/CD Workflows">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -684,22 +598,34 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#core-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 Quick Start
+        🔧 Core Features
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 Quick Start">
+    <nav class="md-nav" aria-label="🔧 Core Features">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prerequisites" class="md-nav__link">
+  <a href="#1-reusable-workflows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Prerequisites
+        1. Reusable Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Reusable Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terraform-plan-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform Plan Workflow
       
     </span>
   </a>
@@ -707,10 +633,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-bootstrap-infrastructure" class="md-nav__link">
+  <a href="#terraform-apply-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Bootstrap Infrastructure
+        Terraform Apply Workflow
       
     </span>
   </a>
@@ -718,10 +644,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-deploy-main-infrastructure" class="md-nav__link">
+  <a href="#sops-decryption-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Deploy Main Infrastructure
+        SOPS Decryption Workflow
       
     </span>
   </a>
@@ -734,50 +660,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#2-validation-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Architecture
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basic Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Modules Usage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📦 Modules Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deploy-ec2-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy EC2 Instance
+        2. Validation Pipeline
       
     </span>
   </a>
@@ -785,21 +671,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deploy-vpc" class="md-nav__link">
+  <a href="#3-security-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploy VPC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-rds-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy RDS Database
+        3. Security Features
       
     </span>
   </a>
@@ -812,33 +687,34 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#security-configuration" class="md-nav__link">
+  <a href="#usage-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔒 Security Configuration
+        📖 Usage Examples
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔒 Security Configuration">
+    <nav class="md-nav" aria-label="📖 Usage Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#security-groups" class="md-nav__link">
+  <a href="#using-reusable-workflows-in-your-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Groups
+        Using Reusable Workflows in Your Repository
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Using Reusable Workflows in Your Repository">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#iam-roles" class="md-nav__link">
+  <a href="#example-infra-awsgithubworkflowsdeployyml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IAM Roles
+        Example: infra-aws/.github/workflows/deploy.yml
       
     </span>
   </a>
@@ -851,33 +727,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-examples" class="md-nav__link">
+  <a href="#using-sops-decryption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 Integration Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔗 Integration Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-monitoring
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-secrets
+        Using SOPS Decryption
       
     </span>
   </a>
@@ -890,33 +743,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
+  <a href="#required-github-secrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 Best Practices
+        🔑 Required GitHub Secrets
       
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔧 Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Operations">
+    <nav class="md-nav" aria-label="🔑 Required GitHub Secrets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connect-to-instance" class="md-nav__link">
+  <a href="#for-aws-deployments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Connect to Instance
+        For AWS Deployments
       
     </span>
   </a>
@@ -924,10 +766,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#backup-and-recovery" class="md-nav__link">
+  <a href="#for-gcp-deployments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backup and Recovery
+        For GCP Deployments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-sops-decryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For SOPS Decryption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-tailscale-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Tailscale (Optional)
       
     </span>
   </a>
@@ -940,10 +804,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
+  <a href="#security-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📖 Documentation
+        🛡️ Security Best Practices
       
     </span>
   </a>
@@ -951,10 +815,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#related-repositories" class="md-nav__link">
+  <a href="#integration-with-other-repositories" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 Related Repositories
+        📚 Integration with Other Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configure-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Configure Your Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configure Secrets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-push-and-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Push and Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Additional Resources
       
     </span>
   </a>
@@ -970,6 +917,92 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -3715,15 +3748,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-infrastructure" class="md-nav__link">
+  <a href="#infra-ci-cicd-workflows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Infrastructure
+        infra-ci: CI/CD Workflows
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AWS Infrastructure">
+    <nav class="md-nav" aria-label="infra-ci: CI/CD Workflows">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3749,22 +3782,34 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#core-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 Quick Start
+        🔧 Core Features
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 Quick Start">
+    <nav class="md-nav" aria-label="🔧 Core Features">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prerequisites" class="md-nav__link">
+  <a href="#1-reusable-workflows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Prerequisites
+        1. Reusable Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Reusable Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terraform-plan-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform Plan Workflow
       
     </span>
   </a>
@@ -3772,10 +3817,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-bootstrap-infrastructure" class="md-nav__link">
+  <a href="#terraform-apply-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Bootstrap Infrastructure
+        Terraform Apply Workflow
       
     </span>
   </a>
@@ -3783,10 +3828,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-deploy-main-infrastructure" class="md-nav__link">
+  <a href="#sops-decryption-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Deploy Main Infrastructure
+        SOPS Decryption Workflow
       
     </span>
   </a>
@@ -3799,50 +3844,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#2-validation-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Architecture
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basic Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Modules Usage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📦 Modules Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deploy-ec2-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy EC2 Instance
+        2. Validation Pipeline
       
     </span>
   </a>
@@ -3850,21 +3855,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deploy-vpc" class="md-nav__link">
+  <a href="#3-security-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploy VPC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-rds-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deploy RDS Database
+        3. Security Features
       
     </span>
   </a>
@@ -3877,33 +3871,34 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#security-configuration" class="md-nav__link">
+  <a href="#usage-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔒 Security Configuration
+        📖 Usage Examples
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔒 Security Configuration">
+    <nav class="md-nav" aria-label="📖 Usage Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#security-groups" class="md-nav__link">
+  <a href="#using-reusable-workflows-in-your-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Groups
+        Using Reusable Workflows in Your Repository
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Using Reusable Workflows in Your Repository">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#iam-roles" class="md-nav__link">
+  <a href="#example-infra-awsgithubworkflowsdeployyml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IAM Roles
+        Example: infra-aws/.github/workflows/deploy.yml
       
     </span>
   </a>
@@ -3916,33 +3911,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-examples" class="md-nav__link">
+  <a href="#using-sops-decryption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 Integration Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔗 Integration Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-monitoring
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#with-infra-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        With infra-secrets
+        Using SOPS Decryption
       
     </span>
   </a>
@@ -3955,33 +3927,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
+  <a href="#required-github-secrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 Best Practices
+        🔑 Required GitHub Secrets
       
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔧 Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Operations">
+    <nav class="md-nav" aria-label="🔑 Required GitHub Secrets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connect-to-instance" class="md-nav__link">
+  <a href="#for-aws-deployments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Connect to Instance
+        For AWS Deployments
       
     </span>
   </a>
@@ -3989,10 +3950,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#backup-and-recovery" class="md-nav__link">
+  <a href="#for-gcp-deployments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backup and Recovery
+        For GCP Deployments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-sops-decryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For SOPS Decryption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-tailscale-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Tailscale (Optional)
       
     </span>
   </a>
@@ -4005,10 +3988,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
+  <a href="#security-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📖 Documentation
+        🛡️ Security Best Practices
       
     </span>
   </a>
@@ -4016,10 +3999,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#related-repositories" class="md-nav__link">
+  <a href="#integration-with-other-repositories" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 Related Repositories
+        📚 Integration with Other Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configure-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Configure Your Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configure Secrets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-push-and-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Push and Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Additional Resources
       
     </span>
   </a>
@@ -4051,364 +4117,234 @@
   
 
 
-  <h1>AWS</h1>
+  <h1>Infra CI</h1>
 
-<h2 id="aws-infrastructure">AWS Infrastructure</h2>
-<p><strong>infra-aws</strong> manages AWS infrastructure deployment using Terraform modules from infra-core, providing standardized cloud resource provisioning.</p>
+<h2 id="infra-ci-cicd-workflows">infra-ci: CI/CD Workflows</h2>
+<p><strong>infra-ci</strong> is a centralized repository containing reusable GitHub Actions workflows, pipeline templates, and automation utilities for infrastructure-as-code projects.</p>
 <h3 id="purpose">🎯 Purpose</h3>
-<p>Deploy and manage AWS infrastructure:</p>
+<p>This repository provides standardized CI/CD components that:</p>
 <ul>
-<li><strong>EC2 Instances</strong> - Virtual machine deployment</li>
-<li><strong>VPC Configuration</strong> - Network infrastructure</li>
-<li><strong>RDS Databases</strong> - Managed databases</li>
-<li><strong>EKS Clusters</strong> - Kubernetes on AWS</li>
-<li><strong>S3 Storage</strong> - Object storage</li>
-<li><strong>IAM Policies</strong> - Access management</li>
+<li><strong>Unify CI/CD Processes</strong> across all <code>infra-*</code> repositories</li>
+<li><strong>Simplify Maintenance</strong> by centralizing pipeline logic</li>
+<li><strong>Enhance Security</strong> with integrated secrets management</li>
+<li><strong>Accelerate Development</strong> with ready-to-use templates</li>
 </ul>
 <h3 id="repository-structure">📁 Repository Structure</h3>
-<pre><code>infra-aws/
-├── bootstrap/              # Initial AWS setup
-│   ├── iam/               # IAM roles and policies
-│   ├── s3/                # S3 buckets for Terraform state
-│   └── dynamodb/          # DynamoDB for state locking
-├── infra/                 # Main infrastructure
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── terraform.tfvars.example
-│   ├── backend.tf
-│   └── outputs.tf
-├── ops/                   # Operational scripts
-│   ├── ssh_config.example
-│   └── scripts/
-├── ide/                   # IDE configurations
+<pre><code>infra-ci/
+├── .github/
+│   └── workflows/
+│       ├── validate.yml             # Terraform validation
+│       ├── deploy.yml               # Deployment template
+│       └── reusable/
+│           ├── terraform-plan.yml   # Reusable Terraform plan
+│           ├── terraform-apply.yml  # Reusable Terraform apply
+│           └── sops-decrypt.yml     # SOPS secrets decryption
+├── scripts/
+│   ├── decrypt.sh                   # SOPS decryption script
+│   └── lint.sh                      # Code formatting checks
+├── templates/
+│   └── README.template.md           # Module README template
+├── docs/
+│   └── ci-guide.md                  # Usage documentation
 └── README.md
 </code></pre>
-<h3 id="quick-start">🚀 Quick Start</h3>
-<h4 id="1-prerequisites">1. Prerequisites</h4>
+<h3 id="core-features">🔧 Core Features</h3>
+<h4 id="1-reusable-workflows">1. Reusable Workflows</h4>
+<h5 id="terraform-plan-workflow">Terraform Plan Workflow</h5>
+<pre><code class="language-yaml"># .github/workflows/reusable/terraform-plan.yml
+name: Terraform Plan
+on:
+  workflow_call:
+    inputs:
+      working-directory:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+</code></pre>
+<h5 id="terraform-apply-workflow">Terraform Apply Workflow</h5>
+<pre><code class="language-yaml"># .github/workflows/reusable/terraform-apply.yml
+name: Terraform Apply
+on:
+  workflow_call:
+    inputs:
+      working-directory:
+        required: true
+        type: string
+</code></pre>
+<h5 id="sops-decryption-workflow">SOPS Decryption Workflow</h5>
+<p>Decrypts sensitive files using SOPS before deployment.</p>
+<h4 id="2-validation-pipeline">2. Validation Pipeline</h4>
+<p>Performs automated checks:
+- ✅ <code>terraform fmt</code> - Code formatting
+- ✅ <code>terraform validate</code> - Configuration validation
+- ✅ <code>tflint</code> - Linting (optional)</p>
+<h4 id="3-security-features">3. Security Features</h4>
 <ul>
-<li><a href="https://terraform.io/downloads">Terraform</a> &gt;= 1.5.0</li>
-<li>AWS CLI configured with credentials</li>
-<li>Existing EC2 key pair (or create new one)</li>
+<li>All secrets passed via GitHub Secrets</li>
+<li>SOPS file decryption via <code>age</code> or KMS</li>
+<li>Optional Tailscale connectivity for secure deployments</li>
 </ul>
-<pre><code class="language-bash"># Configure AWS CLI
-aws configure
+<h3 id="usage-examples">📖 Usage Examples</h3>
+<h4 id="using-reusable-workflows-in-your-repository">Using Reusable Workflows in Your Repository</h4>
+<h5 id="example-infra-awsgithubworkflowsdeployyml">Example: infra-aws/.github/workflows/deploy.yml</h5>
+<pre><code class="language-yaml">name: Deploy AWS Infrastructure
+on:
+  push:
+    branches: [main]
+  pull_request:
 
-# Verify access
-aws sts get-caller-identity
+jobs:
+  plan:
+    uses: v-grand/infra-ci/.github/workflows/reusable/terraform-plan.yml@main
+    with:
+      working-directory: ./infra
+      environment: dev
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+  apply:
+    needs: plan
+    if: github.ref == 'refs/heads/main'
+    uses: v-grand/infra-ci/.github/workflows/reusable/terraform-apply.yml@main
+    with:
+      working-directory: ./infra
+      environment: dev
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 </code></pre>
-<h4 id="2-bootstrap-infrastructure">2. Bootstrap Infrastructure</h4>
-<pre><code class="language-bash"># Clone repository
-git clone https://github.com/v-grand/infra-aws.git
-cd infra-aws
+<h4 id="using-sops-decryption">Using SOPS Decryption</h4>
+<pre><code class="language-yaml">name: Deploy with Secrets
+on:
+  push:
+    branches: [main]
 
-# Bootstrap (first time only)
-cd bootstrap
-terraform init
-terraform apply
+jobs:
+  decrypt-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-# This creates:
-# - S3 bucket for Terraform state
-# - DynamoDB table for state locking
-# - Basic IAM roles
+      - name: Decrypt Secrets
+        uses: v-grand/infra-ci/.github/workflows/reusable/sops-decrypt.yml@main
+        with:
+          encrypted-file: secrets.enc.yaml
+          age-key: ${{ secrets.AGE_SECRET_KEY }}
+
+      - name: Deploy Infrastructure
+        run: |
+          terraform init
+          terraform apply -auto-approve
 </code></pre>
-<h4 id="3-deploy-main-infrastructure">3. Deploy Main Infrastructure</h4>
-<pre><code class="language-bash">cd ../infra
-
-# Copy example configuration
-cp terraform.tfvars.example terraform.tfvars
-
-# Edit configuration
-nano terraform.tfvars
-</code></pre>
-<p><strong>terraform.tfvars example:</strong></p>
-<pre><code class="language-hcl"># AWS Configuration
-aws_region = &quot;us-east-1&quot;
-key_name   = &quot;my-ec2-key&quot;
-
-# Network Configuration
-vpc_cidr             = &quot;10.0.0.0/16&quot;
-availability_zones   = [&quot;us-east-1a&quot;, &quot;us-east-1b&quot;]
-public_subnet_cidrs  = [&quot;10.0.1.0/24&quot;, &quot;10.0.2.0/24&quot;]
-private_subnet_cidrs = [&quot;10.0.10.0/24&quot;, &quot;10.0.11.0/24&quot;]
-
-# SSH Access
-allowed_ssh_cidr = &quot;YOUR_IP/32&quot;  # Get with: curl ifconfig.me
-
-# Application
-repo_url    = &quot;https://github.com/your-org/your-app.git&quot;
-repo_branch = &quot;main&quot;
-
-# Tags
-tags = {
-  Environment = &quot;dev&quot;
-  Project     = &quot;my-app&quot;
-  ManagedBy   = &quot;terraform&quot;
-}
-</code></pre>
-<pre><code class="language-bash"># Deploy
-terraform init
-terraform plan
-terraform apply
-</code></pre>
-<h3 id="architecture">🏗️ Architecture</h3>
-<h4 id="basic-architecture">Basic Architecture</h4>
-<pre><code>┌─────────────────────────────────────────────┐
-│              AWS Region (us-east-1)         │
-│  ┌────────────────────────────────────────┐ │
-│  │           VPC (10.0.0.0/16)            │ │
-│  │  ┌──────────────┬──────────────────┐  │ │
-│  │  │   AZ-1a      │      AZ-1b       │  │ │
-│  │  │              │                  │  │ │
-│  │  │  Public      │    Public        │  │ │
-│  │  │  Subnet      │    Subnet        │  │ │
-│  │  │  10.0.1/24   │    10.0.2/24     │  │ │
-│  │  │  ┌────────┐  │   ┌────────┐     │  │ │
-│  │  │  │  EC2   │  │   │  EC2   │     │  │ │
-│  │  │  │  ALB   │  │   │  ALB   │     │  │ │
-│  │  │  └────────┘  │   └────────┘     │  │ │
-│  │  │              │                  │  │ │
-│  │  │  Private     │    Private       │  │ │
-│  │  │  Subnet      │    Subnet        │  │ │
-│  │  │  10.0.10/24  │    10.0.11/24    │  │ │
-│  │  │  ┌────────┐  │   ┌────────┐     │  │ │
-│  │  │  │  RDS   │  │   │  RDS   │     │  │ │
-│  │  │  │(Primary)│  │   │(Standby)│    │  │ │
-│  │  │  └────────┘  │   └────────┘     │  │ │
-│  │  └──────────────┴──────────────────┘  │ │
-│  └────────────────────────────────────────┘ │
-└─────────────────────────────────────────────┘
-</code></pre>
-<h3 id="modules-usage">📦 Modules Usage</h3>
-<h4 id="deploy-ec2-instance">Deploy EC2 Instance</h4>
-<pre><code class="language-hcl">module &quot;web_server&quot; {
-  source = &quot;github.com/v-grand/infra-core//modules/vm&quot;
-
-  cloud         = &quot;aws&quot;
-  instance_name = &quot;web-server&quot;
-  instance_type = &quot;t3.medium&quot;
-
-  # Network
-  subnet_id          = module.vpc.public_subnet_ids[0]
-  security_group_ids = [aws_security_group.web.id]
-
-  # SSH
-  key_name = var.key_name
-
-  # User data
-  user_data = templatefile(&quot;${path.module}/scripts/user-data.sh&quot;, {
-    repo_url = var.repo_url
-  })
-
-  tags = merge(var.tags, {
-    Role = &quot;web-server&quot;
-  })
-}
-</code></pre>
-<h4 id="deploy-vpc">Deploy VPC</h4>
-<pre><code class="language-hcl">module &quot;vpc&quot; {
-  source = &quot;github.com/v-grand/infra-network//modules/vpc-aws&quot;
-
-  vpc_cidr           = var.vpc_cidr
-  availability_zones = var.availability_zones
-
-  public_subnet_cidrs  = var.public_subnet_cidrs
-  private_subnet_cidrs = var.private_subnet_cidrs
-
-  enable_nat_gateway   = true
-  enable_dns_hostnames = true
-
-  tags = var.tags
-}
-</code></pre>
-<h4 id="deploy-rds-database">Deploy RDS Database</h4>
-<pre><code class="language-hcl">module &quot;database&quot; {
-  source = &quot;github.com/v-grand/infra-core//modules/db&quot;
-
-  cloud = &quot;aws&quot;
-
-  # Instance configuration
-  identifier     = &quot;myapp-db&quot;
-  engine         = &quot;postgres&quot;
-  engine_version = &quot;15.3&quot;
-  instance_class = &quot;db.t3.medium&quot;
-
-  # Storage
-  allocated_storage     = 100
-  max_allocated_storage = 500
-  storage_encrypted     = true
-
-  # Database
-  db_name  = &quot;myapp&quot;
-  username = &quot;admin&quot;
-  password = var.db_password  # Use secrets manager
-
-  # Network
-  vpc_id     = module.vpc.vpc_id
-  subnet_ids = module.vpc.private_subnet_ids
-
-  # Security
-  allowed_cidr_blocks = [var.vpc_cidr]
-
-  # Backup
-  backup_retention_period = 7
-  backup_window          = &quot;03:00-04:00&quot;
-  maintenance_window     = &quot;mon:04:00-mon:05:00&quot;
-
-  # High Availability
-  multi_az               = true
-  deletion_protection    = true
-
-  tags = var.tags
-}
-</code></pre>
-<h3 id="security-configuration">🔒 Security Configuration</h3>
-<h4 id="security-groups">Security Groups</h4>
-<pre><code class="language-hcl"># Web server security group
-resource &quot;aws_security_group&quot; &quot;web&quot; {
-  name        = &quot;web-server-sg&quot;
-  description = &quot;Security group for web servers&quot;
-  vpc_id      = module.vpc.vpc_id
-
-  # HTTP
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  # HTTPS
-  ingress {
-    from_port   = 443
-    to_port     = 443
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  # SSH (restricted)
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = &quot;tcp&quot;
-    cidr_blocks = [var.allowed_ssh_cidr]
-  }
-
-  # Outbound
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = &quot;-1&quot;
-    cidr_blocks = [&quot;0.0.0.0/0&quot;]
-  }
-
-  tags = merge(var.tags, {
-    Name = &quot;web-server-sg&quot;
-  })
-}
-</code></pre>
-<h4 id="iam-roles">IAM Roles</h4>
-<pre><code class="language-hcl"># EC2 instance role
-resource &quot;aws_iam_role&quot; &quot;ec2_role&quot; {
-  name = &quot;ec2-instance-role&quot;
-
-  assume_role_policy = jsonencode({
-    Version = &quot;2012-10-17&quot;
-    Statement = [
-      {
-        Action = &quot;sts:AssumeRole&quot;
-        Effect = &quot;Allow&quot;
-        Principal = {
-          Service = &quot;ec2.amazonaws.com&quot;
-        }
-      }
-    ]
-  })
-}
-
-# Attach policies
-resource &quot;aws_iam_role_policy_attachment&quot; &quot;ec2_s3_access&quot; {
-  role       = aws_iam_role.ec2_role.name
-  policy_arn = &quot;arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess&quot;
-}
-</code></pre>
-<h3 id="integration-examples">🔗  Integration Examples</h3>
-<h4 id="with-infra-monitoring">With infra-monitoring</h4>
-<pre><code class="language-hcl"># Deploy monitoring
-module &quot;monitoring&quot; {
-  source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
-
-  # AWS specific configuration
-  vpc_id    = module.vpc.vpc_id
-  subnet_id = module.vpc.private_subnet_ids[0]
-
-  instance_type = &quot;t3.medium&quot;
-
-  # Scrape targets
-  scrape_targets = [
-    module.web_server.instance_private_ip
-  ]
-}
-</code></pre>
-<h4 id="with-infra-secrets">With infra-secrets</h4>
-<pre><code class="language-hcl"># Store secrets in AWS Secrets Manager
-module &quot;secrets&quot; {
-  source = &quot;github.com/v-grand/infra-secrets//modules/aws-secrets&quot;
-
-  secrets = {
-    db_password = {
-      secret_string           = var.db_password
-      recovery_window_in_days = 30
-    }
-  }
-}
-</code></pre>
-<h3 id="best-practices">📚 Best Practices</h3>
+<h3 id="required-github-secrets">🔑 Required GitHub Secrets</h3>
+<p>Configure these secrets in your repository settings:</p>
+<h4 id="for-aws-deployments">For AWS Deployments</h4>
+<ul>
+<li><code>AWS_ACCESS_KEY_ID</code></li>
+<li><code>AWS_SECRET_ACCESS_KEY</code></li>
+<li><code>AWS_REGION</code> (optional)</li>
+</ul>
+<h4 id="for-gcp-deployments">For GCP Deployments</h4>
+<ul>
+<li><code>GCP_CREDENTIALS</code> - Service account JSON</li>
+<li><code>GCP_PROJECT_ID</code></li>
+<li><code>GCP_REGION</code></li>
+</ul>
+<h4 id="for-sops-decryption">For SOPS Decryption</h4>
+<ul>
+<li><code>AGE_SECRET_KEY</code> - Age private key</li>
+<li><code>SOPS_KMS_ARN</code> - AWS KMS key ARN (if using AWS KMS)</li>
+<li><code>SOPS_GCP_KMS</code> - GCP KMS key (if using GCP KMS)</li>
+</ul>
+<h4 id="for-tailscale-optional">For Tailscale (Optional)</h4>
+<ul>
+<li><code>TAILSCALE_AUTH_KEY</code> - Tailscale authentication key</li>
+</ul>
+<h3 id="security-best-practices">🛡️ Security Best Practices</h3>
 <ol>
-<li><strong>Multi-AZ Deployment</strong> - Deploy across multiple availability zones</li>
-<li><strong>Encrypted Storage</strong> - Enable encryption for EBS and RDS</li>
-<li><strong>IAM Least Privilege</strong> - Minimal required permissions</li>
-<li><strong>VPC Flow Logs</strong> - Enable for network monitoring</li>
-<li><strong>CloudWatch Alarms</strong> - Set up monitoring alerts</li>
-<li><strong>Backup Strategy</strong> - Regular automated snapshots</li>
-<li><strong>Cost Optimization</strong> - Use reserved instances, spot instances</li>
-<li><strong>Tagging Strategy</strong> - Consistent resource tagging</li>
+<li><strong>Never commit secrets</strong> - Always use GitHub Secrets or SOPS</li>
+<li><strong>Use least privilege</strong> - Grant minimal required permissions</li>
+<li><strong>Enable branch protection</strong> - Require PR reviews for <code>main</code></li>
+<li><strong>Rotate credentials</strong> - Regularly update access keys</li>
+<li><strong>Audit deployments</strong> - Review workflow run logs</li>
 </ol>
-<h3 id="operations">🔧 Operations</h3>
-<h4 id="connect-to-instance">Connect to Instance</h4>
-<pre><code class="language-bash"># Get instance IP
-terraform output instance_public_ip
+<h3 id="integration-with-other-repositories">📚 Integration with Other Repositories</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Repository</th>
+<th style="text-align: left;">Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>infra-aws</strong></td>
+<td style="text-align: left;">Uses <code>terraform-plan</code> and <code>terraform-apply</code> workflows</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>infra-gcp</strong></td>
+<td style="text-align: left;">Uses reusable workflows with GCP credentials</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>infra-k8s</strong></td>
+<td style="text-align: left;">Integrates for Helm chart deployments</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>infra-monitoring</strong></td>
+<td style="text-align: left;">Uses validation workflows</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>infra-secrets</strong></td>
+<td style="text-align: left;">Uses SOPS decryption workflows</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getting-started">🚀 Getting Started</h3>
+<h4 id="1-configure-your-repository">1. Configure Your Repository</h4>
+<p>Add this workflow to your repository:</p>
+<pre><code class="language-bash">mkdir -p .github/workflows
+cat &gt; .github/workflows/deploy.yml &lt;&lt; 'EOF'
+name: Deploy Infrastructure
+on:
+  push:
+    branches: [main]
+  pull_request:
 
-# SSH connection
-ssh -i ~/.ssh/your-key.pem ec2-user@INSTANCE_IP
-
-# Or use SSH config
-cp ops/ssh_config.example ~/.ssh/config
-# Edit config with your IP
-ssh devml
+jobs:
+  terraform:
+    uses: v-grand/infra-ci/.github/workflows/reusable/terraform-plan.yml@main
+    with:
+      working-directory: ./
+      environment: dev
+EOF
 </code></pre>
-<h4 id="backup-and-recovery">Backup and Recovery</h4>
-<pre><code class="language-bash"># Create snapshot
-aws ec2 create-snapshot \
-  --volume-id vol-xxxxx \
-  --description &quot;Manual backup&quot;
-
-# Create AMI
-aws ec2 create-image \
-  --instance-id i-xxxxx \
-  --name &quot;web-server-backup-$(date +%Y%m%d)&quot;
+<h4 id="2-configure-secrets">2. Configure Secrets</h4>
+<p>Navigate to your repository → Settings → Secrets and add required secrets.</p>
+<h4 id="3-push-and-deploy">3. Push and Deploy</h4>
+<pre><code class="language-bash">git add .github/workflows/deploy.yml
+git commit -m &quot;Add CI/CD pipeline&quot;
+git push
 </code></pre>
-<h3 id="documentation">📖 Documentation</h3>
+<h3 id="outcome">📊 Outcome</h3>
+<p>After implementation:
+- ✅ Unified CI/CD pipelines across all repositories
+- ✅ Simplified maintenance and updates
+- ✅ Enhanced security with secrets management
+- ✅ Faster project initiation</p>
+<h3 id="related-documentation">🔗 Related Documentation</h3>
 <ul>
-<li><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected</a></li>
-<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs">Terraform AWS Provider</a></li>
-<li><a href="https://docs.aws.amazon.com/cli/">AWS CLI Reference</a></li>
+<li><a href="https://terraform.io/docs">Terraform Documentation</a></li>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions</a></li>
+<li><a href="https://github.com/mozilla/sops">SOPS</a></li>
+<li><a href="https://tailscale.com/kb/">Tailscale</a></li>
 </ul>
-<h3 id="related-repositories">🔗 Related Repositories</h3>
+<h3 id="additional-resources">📝 Additional Resources</h3>
 <ul>
-<li><a href="../infra-core/">infra-core</a> - Reusable Terraform modules</li>
-<li><a href="../infra-network/">infra-network</a> - Network configuration</li>
-<li><a href="../infra-monitoring/">infra-monitoring</a> - Monitoring setup</li>
-<li><a href="../infra-secrets/">infra-secrets</a> - Secrets management</li>
+<li><a href="https://github.com/v-grand/infra-ci/blob/main/docs/ci-guide.md">CI Guide</a></li>
+<li><a href="https://github.com/v-grand/infra-template">Repository Template</a></li>
 </ul>
 
 
