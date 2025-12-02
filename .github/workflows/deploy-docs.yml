@@ -24,7 +24,10 @@ jobs:
           key: ${{ runner.os }}-pip-mkdocs
 
       - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-i18n mkdocs-jupyter
+        run: pip install mkdocs-material mkdocs-i18n mkdocs-jupyter jupyter nbconvert
+
+      - name: Build site
+        run: mkdocs build
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
