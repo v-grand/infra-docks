@@ -27,11 +27,11 @@ nav:
       - 'K8s': 'en/gcp/k8s.md'
     - 'Tailscale': 'en/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'docs/notebooks/example.md'
+      - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
+      - 'Infra Core Usage': 'docs/notebooks/infra-core-usage.md'
+      - 'Tailscale Mesh': 'docs/notebooks/tailscale-mesh.md'
+      - 'Terraform Demo': 'docs/notebooks/terraform-demo.md'
   - 'ru':
     - 'Home': 'ru/index.md'
     - 'Infra Core': 'ru/infra-core.md'
@@ -45,11 +45,11 @@ nav:
       - 'K8s': 'ru/gcp/k8s.md'
     - 'Tailscale': 'ru/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'docs/notebooks/example.md'
+      - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
+      - 'Infra Core Usage': 'docs/notebooks/infra-core-usage.md'
+      - 'Tailscale Mesh': 'docs/notebooks/tailscale-mesh.md'
+      - 'Terraform Demo': 'docs/notebooks/terraform-demo.md'
   - 'pl':
     - 'Home': 'pl/index.md'
     - 'Infra Core': 'pl/infra-core.md'
@@ -63,11 +63,11 @@ nav:
       - 'K8s': 'pl/gcp/k8s.md'
     - 'Tailscale': 'pl/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'docs/notebooks/example.md'
+      - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
+      - 'Infra Core Usage': 'docs/notebooks/infra-core-usage.md'
+      - 'Tailscale Mesh': 'docs/notebooks/tailscale-mesh.md'
+      - 'Terraform Demo': 'docs/notebooks/terraform-demo.md'
 
 plugins:
   - search
