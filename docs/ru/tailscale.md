@@ -1,3 +1,3 @@
-# Сеть Tailscale
+# Ячеистая сеть Tailscale
 
-Документация по сети Tailscale.
+Документация по ячеистой сети Tailscale.

@@ -1,36 +1,36 @@
 # infra-core
 
-A comprehensive library of reusable Terraform modules designed for multi-cloud infrastructure management. This library supports AWS, GCP, Hetzner, and Contabo, allowing for flexible and agnostic infrastructure deployment.
+Kompleksowa biblioteka modułów Terraform wielokrotnego użytku, przeznaczona do zarządzania infrastrukturą wielochmurową. Biblioteka ta obsługuje AWS, GCP, Hetzner i Contabo, umożliwiając elastyczne i niezależne od platformy wdrażanie infrastruktury.
 
-## 🚀 Features
+## 🚀 Funkcje
 
-- **Multi-Cloud Support**: Seamlessly provision resources across major cloud providers.
-- **Modular Design**: Reusable components for VMs, VPCs, Databases, and more.
-- **Best Practices**: Built with security and scalability in mind.
-- **Tailscale Integration**: Easy setup for secure mesh networking.
+- **Wsparcie dla wielu chmur**: Bezproblemowe przydzielanie zasobów u głównych dostawców chmurowych.
+- **Modułowa konstrukcja**: Komponenty wielokrotnego użytku dla maszyn wirtualnych, VPC, baz danych i innych.
+- **Najlepsze praktyki**: Zbudowane z myślą o bezpieczeństwie i skalowalności.
+- **Integracja z Tailscale**: Łatwa konfiguracja bezpiecznej sieci kratowej.
 
-## 📦 Modules
+## 📦 Moduły
 
-| Module | Description | Supported Providers |
+| Moduł | Opis | Obsługiwani dostawcy |
 | :--- | :--- | :--- |
-| `vm` | Provision Virtual Machines (EC2, GCE) | AWS, GCP |
-| `vpc` | Network configuration (VPC, Subnets) | AWS, GCP |
-| `db` | Managed Databases (RDS, Cloud SQL) | AWS, GCP |
-| `tailscale` | Tailscale Mesh Networking | All |
-| `k8s` | Kubernetes Clusters (EKS, GKE) | AWS, GCP |
+| `vm` | Tworzenie maszyn wirtualnych (EC2, GCE) | AWS, GCP |
+| `vpc` | Konfiguracja sieci (VPC, podsieci) | AWS, GCP |
+| `db` | Zarządzane bazy danych (RDS, Cloud SQL) | AWS, GCP |
+| `tailscale` | Sieć kratowa Tailscale | Wszyscy |
+| `k8s` | Klastry Kubernetes (EKS, GKE) | AWS, GCP |
 
-## 🛠️ Prerequisites
+## 🛠️ Wymagania wstępne
 
 - [Terraform](https://www.terraform.io/downloads) >= 1.0
-- Cloud Provider Credentials (configured via environment variables or CLI)
+- Poświadczenia dostawcy chmury (skonfigurowane za pomocą zmiennych środowiskowych lub CLI)
 
-## 📖 Usage
+## 📖 Użycie
 
-Here is a basic example of how to use the `vm` module in your Terraform configuration:
+Oto podstawowy przykład użycia modułu `vm` w konfiguracji Terraform:
 
 ```hcl
 module "my_web_server" {
-  source        = "./modules/vm" # Or git source
+  source        = "./modules/vm" # Lub źródło z git
   provider      = "aws"
   instance_type = "t3.micro"
   ami           = "ami-0c55b159cbfafe1f0"

@@ -1,3 +1,3 @@
-# Sieć Tailscale
+# Sieć kratowa Tailscale
 
-Dokumentacja dotycząca sieci Tailscale.
+Dokumentacja dotycząca sieci kratowej Tailscale.

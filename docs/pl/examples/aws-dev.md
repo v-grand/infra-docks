@@ -1,17 +1,17 @@
-# AWS Development Environment Example
+# Przykład środowiska deweloperskiego w AWS
 
-This example demonstrates how to set up a complete development environment on AWS using `infra-core` modules.
+Ten przykład pokazuje, jak skonfigurować kompletne środowisko deweloperskie w AWS przy użyciu modułów `infra-core`.
 
-It includes:
-- A VPC with subnets
-- An EC2 instance (VM)
-- An RDS MySQL database
-- Tailscale integration for secure access
+Obejmuje on:
+- VPC z podsieciami
+- Instancję EC2 (VM)
+- Bazę danych RDS MySQL
+- Integrację z Tailscale dla bezpiecznego dostępu
 
-## Configuration (`main.tf`)
+## Konfiguracja (`main.tf`)
 
 ```hcl
-# main.tf for aws-dev example
+# main.tf dla przykładu aws-dev
 
 provider "aws" {
   region = "us-east-1"
@@ -49,7 +49,7 @@ module "db" {
   instance_class    = "db.t2.micro"
   db_name           = "awsdevdb"
   username          = "user"
-  password          = "password" # Replace with a secure password
+  password          = "password" # Zastąp bezpiecznym hasłem
   tags = {
     Name = "aws-dev-db"
   }
@@ -59,9 +59,9 @@ module "tailscale" {
   source = "../../modules/tailscale"
 
   instance_id      = module.vm.instance_id
-  auth_key         = "your-tailscale-auth-key" # Replace with your auth key
+  auth_key         = "your-tailscale-auth-key" # Zastąp swoim kluczem uwierzytelniającym
   ssh_user         = "ec2-user"
-  private_key_path = "~/.ssh/id_rsa" # Replace with your private key path
+  private_key_path = "~/.ssh/id_rsa" # Zastąp ścieżką do swojego klucza prywatnego
   host             = module.vm.public_ip
 }
 
