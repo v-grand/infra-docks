@@ -12,7 +12,7 @@
         <link rel="prev" href="../examples/aws-dev/">
       
       
-        <link rel="next" href="../../notebooks/example/">
+        <link rel="next" href="../secure-access/aws-oidc/">
       
       
         
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tailscale-mesh" class="md-skip">
+        <a href="#tailscale-mesh-network" class="md-skip">
           Skip to content
         </a>
       
@@ -989,7 +989,7 @@
   <span class="md-ellipsis">
     
   
-    Secure Access
+    Examples
   
 
     
@@ -1002,92 +1002,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Secure Access
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../secure-access/aws-oidc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS OIDC
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Examples
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1153,10 +1067,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
             
   
   
@@ -1174,8 +1088,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1248,13 +1162,263 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tailscale-mesh" class="md-nav__link">
+  <a href="#tailscale-mesh-network" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tailscale Mesh
+        Tailscale Mesh Network
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Tailscale Mesh Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux (Ubuntu/Debian)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Authenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-check-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Check Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-your-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Get Your IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infrastructure Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-with-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub Actions Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subnet Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-lists-acls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Lists (ACLs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magicdns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MagicDNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1295,6 +1459,120 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6_3" id="__nav_1_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Secure Access
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Secure Access
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../secure-access/aws-oidc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS OIDC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../secure-access/gcp-wif/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP WIF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1321,10 +1599,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
         
           
-          <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
             
   
   
@@ -1342,8 +1620,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2154,7 +2432,7 @@
   <span class="md-ellipsis">
     
   
-    Безопасный доступ
+    Examples
   
 
     
@@ -2167,6 +2445,198 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Examples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ru/examples/aws-dev/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Dev
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Integrations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ru/tailscale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tailscale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Infra Deployer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_3" id="__nav_2_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Безопасный доступ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2268,84 +2738,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Examples
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Examples
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ru/examples/aws-dev/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS Dev
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2382,7 +2774,7 @@
   <span class="md-ellipsis">
     
   
-    Integrations
+    Notebooks
   
 
     
@@ -2395,120 +2787,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Integrations
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ru/tailscale/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tailscale
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Infra Deployer
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Notebooks
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3319,7 +3597,7 @@
   <span class="md-ellipsis">
     
   
-    Bezpieczny dostęp
+    Examples
   
 
     
@@ -3332,92 +3610,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Bezpieczny dostęp
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pl/secure-access/aws-oidc.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS OIDC
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Examples
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3481,10 +3673,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -3502,8 +3694,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3569,6 +3761,120 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bezpieczny dostęp
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bezpieczny dostęp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pl/secure-access/aws-oidc.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS OIDC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pl/secure-access/gcp-wif/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP WIF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3595,10 +3901,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -3616,8 +3922,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3807,13 +4113,263 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tailscale-mesh" class="md-nav__link">
+  <a href="#tailscale-mesh-network" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tailscale Mesh
+        Tailscale Mesh Network
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Tailscale Mesh Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux (Ubuntu/Debian)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Authenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-check-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Check Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-your-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Get Your IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infrastructure Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-with-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub Actions Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subnet Routing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-lists-acls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Lists (ACLs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magicdns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MagicDNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3839,8 +4395,132 @@
 
   <h1>Tailscale</h1>
 
-<h2 id="tailscale-mesh">Tailscale Mesh</h2>
-<p>Documentation for the Tailscale mesh network.</p>
+<h2 id="tailscale-mesh-network">Tailscale Mesh Network</h2>
+<p>Tailscale creates a secure mesh network (VPN) between your devices and infrastructure using WireGuard protocol. It's perfect for connecting your development machines, CI/CD runners, and cloud resources.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>Zero-config VPN</strong>: Automatic peer discovery and connection</li>
+<li><strong>End-to-end encryption</strong>: Using WireGuard protocol</li>
+<li><strong>Cross-platform</strong>: Works on Linux, Windows, macOS, iOS, Android</li>
+<li><strong>ACLs</strong>: Fine-grained access control</li>
+<li><strong>MagicDNS</strong>: Automatic DNS resolution for devices</li>
+<li><strong>Subnet routing</strong>: Access to entire networks through exit nodes</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<h4 id="linux-ubuntudebian">Linux (Ubuntu/Debian)</h4>
+<pre><code class="language-bash">curl -fsSL https://tailscale.com/install.sh | sh
+</code></pre>
+<h4 id="macos">macOS</h4>
+<pre><code class="language-bash">brew install tailscale
+</code></pre>
+<h4 id="windows">Windows</h4>
+<p>Download and install from <a href="https://tailscale.com/download">tailscale.com/download</a></p>
+<h3 id="quick-start">Quick Start</h3>
+<h4 id="1-authenticate">1. Authenticate</h4>
+<pre><code class="language-bash">sudo tailscale up
+</code></pre>
+<p>This will open a browser window for authentication. After logging in, your device will join your tailnet.</p>
+<h4 id="2-check-status">2. Check Status</h4>
+<pre><code class="language-bash">tailscale status
+</code></pre>
+<h4 id="3-get-your-ip">3. Get Your IP</h4>
+<pre><code class="language-bash">tailscale ip -4
+</code></pre>
+<h3 id="infrastructure-integration">Infrastructure Integration</h3>
+<h4 id="using-with-terraform">Using with Terraform</h4>
+<pre><code class="language-hcl">resource &quot;tailscale_tailnet_key&quot; &quot;ci_cd&quot; {
+  reusable      = true
+  ephemeral     = false
+  preauthorized = true
+  expiry        = 7776000  # 90 days
+  description   = &quot;CI/CD authentication key&quot;
+}
+
+output &quot;tailscale_key&quot; {
+  value     = tailscale_tailnet_key.ci_cd.key
+  sensitive = true
+}
+</code></pre>
+<h4 id="github-actions-integration">GitHub Actions Integration</h4>
+<pre><code class="language-yaml">- name: Connect to Tailscale
+  uses: tailscale/github-action@v2
+  with:
+    oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+    oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+    tags: tag:ci
+
+- name: Access internal resources
+  run: |
+    curl http://internal-service.tail-scale.ts.net
+</code></pre>
+<h4 id="subnet-routing">Subnet Routing</h4>
+<p>To expose an entire subnet through a Tailscale node:</p>
+<pre><code class="language-bash">echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p /etc/sysctl.conf
+
+sudo tailscale up --advertise-routes=10.0.0.0/24
+</code></pre>
+<p>Then approve the routes in the Tailscale admin console.</p>
+<h3 id="access-control-lists-acls">Access Control Lists (ACLs)</h3>
+<p>Example ACL configuration:</p>
+<pre><code class="language-json">{
+  &quot;acls&quot;: [
+    {
+      &quot;action&quot;: &quot;accept&quot;,
+      &quot;src&quot;: [&quot;tag:ci&quot;],
+      &quot;dst&quot;: [&quot;tag:production:*&quot;]
+    },
+    {
+      &quot;action&quot;: &quot;accept&quot;,
+      &quot;src&quot;: [&quot;group:developers&quot;],
+      &quot;dst&quot;: [&quot;tag:development:*&quot;]
+    }
+  ],
+  &quot;tagOwners&quot;: {
+    &quot;tag:ci&quot;: [&quot;autogroup:admin&quot;],
+    &quot;tag:production&quot;: [&quot;autogroup:admin&quot;],
+    &quot;tag:development&quot;: [&quot;autogroup:admin&quot;]
+  }
+}
+</code></pre>
+<h3 id="magicdns">MagicDNS</h3>
+<p>Enable MagicDNS in your tailnet settings to use hostnames instead of IPs:</p>
+<pre><code class="language-bash"># Instead of:
+ssh 100.64.1.2
+
+# Use:
+ssh my-server.tail-scale.ts.net
+</code></pre>
+<h3 id="best-practices">Best Practices</h3>
+<ol>
+<li><strong>Use tags</strong> for infrastructure nodes instead of user accounts</li>
+<li><strong>Enable MagicDNS</strong> for easier service discovery</li>
+<li><strong>Set up subnet routing</strong> for accessing entire networks</li>
+<li><strong>Use ACLs</strong> to restrict access between different environments</li>
+<li><strong>Rotate auth keys</strong> regularly for CI/CD</li>
+<li><strong>Enable HTTPS</strong> for Tailscale admin console access</li>
+</ol>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<h4 id="connection-issues">Connection Issues</h4>
+<pre><code class="language-bash"># Check connectivity
+tailscale ping &lt;device-name&gt;
+
+# View detailed status
+tailscale status --json
+
+# Check logs
+sudo journalctl -u tailscaled
+</code></pre>
+<h4 id="reset-connection">Reset Connection</h4>
+<pre><code class="language-bash">sudo tailscale down
+sudo tailscale up
+</code></pre>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://tailscale.com/kb/">Official Documentation</a></li>
+<li><a href="https://registry.terraform.io/providers/tailscale/tailscale/latest/docs">Terraform Provider</a></li>
+<li><a href="https://github.com/tailscale/github-action">GitHub Action</a></li>
+</ul>
 
 
 

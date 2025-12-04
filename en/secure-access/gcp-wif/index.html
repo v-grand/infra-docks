@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../examples/aws-dev/">
+        <link rel="prev" href="../aws-oidc/">
       
       
-        <link rel="next" href="../../notebooks/example/">
+        <link rel="next" href="../../../notebooks/example/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/logo.svg">
+      <link rel="icon" href="../../../assets/images/logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Tailscale - Infra Docs</title>
+        <title>GCP WIF - Infra Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tailscale" class="md-skip">
+        <a href="#secure-gcp-access-with-workload-identity-federation" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../../.." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tailscale
+              GCP WIF
             
           </span>
         </div>
@@ -188,11 +188,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../en/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -208,8 +210,6 @@
   
   
   
-    
-  
   
     
     
@@ -217,13 +217,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../infra-core/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../ru/infra-core/" class="md-tabs__link">
           
   
   
@@ -253,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../pl/infra-core/" class="md-tabs__link">
+        <a href="../../../pl/infra-core/" class="md-tabs__link">
           
   
   
@@ -290,9 +288,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../../.." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     Infra Docs
@@ -316,24 +314,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -351,7 +354,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -369,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -447,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-core/" class="md-nav__link">
+      <a href="../../infra-core/" class="md-nav__link">
         
   
   
@@ -475,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-template/" class="md-nav__link">
+      <a href="../../infra-template/" class="md-nav__link">
         
   
   
@@ -503,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-ci/" class="md-nav__link">
+      <a href="../../infra-ci/" class="md-nav__link">
         
   
   
@@ -589,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/aws/" class="md-nav__link">
+      <a href="../../aws/" class="md-nav__link">
         
   
   
@@ -667,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/" class="md-nav__link">
+      <a href="../../gcp/" class="md-nav__link">
         
   
   
@@ -695,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/vm/" class="md-nav__link">
+      <a href="../../gcp/vm/" class="md-nav__link">
         
   
   
@@ -723,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/db/" class="md-nav__link">
+      <a href="../../gcp/db/" class="md-nav__link">
         
   
   
@@ -751,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/k8s/" class="md-nav__link">
+      <a href="../../gcp/k8s/" class="md-nav__link">
         
   
   
@@ -787,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-network/" class="md-nav__link">
+      <a href="../../infra-network/" class="md-nav__link">
         
   
   
@@ -873,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-monitoring/" class="md-nav__link">
+      <a href="../../infra-monitoring/" class="md-nav__link">
         
   
   
@@ -901,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-secrets/" class="md-nav__link">
+      <a href="../../infra-secrets/" class="md-nav__link">
         
   
   
@@ -929,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-k8s/" class="md-nav__link">
+      <a href="../../infra-k8s/" class="md-nav__link">
         
   
   
@@ -1015,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/examples/aws-dev/" class="md-nav__link">
+      <a href="../../examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -1048,6 +1051,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1058,11 +1063,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
           <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
@@ -1083,7 +1088,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1101,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/tailscale/" class="md-nav__link">
+      <a href="../../tailscale/" class="md-nav__link">
         
   
   
@@ -1129,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -1154,6 +1159,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1164,11 +1171,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6_3" checked>
         
           
           <label class="md-nav__link" for="__nav_1_6_3" id="__nav_1_6_3_label" tabindex="0">
@@ -1189,7 +1196,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1207,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/secure-access/aws-oidc/" class="md-nav__link">
+      <a href="../aws-oidc/" class="md-nav__link">
         
   
   
@@ -1232,10 +1239,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../en/secure-access/gcp-wif/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP WIF
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1251,6 +1283,207 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-gcp-access-with-workload-identity-federation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure GCP Access with Workload Identity Federation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure GCP Access with Workload Identity Federation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-enable-required-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Enable Required APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-workload-identity-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create Workload Identity Pool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-workload-identity-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Create Workload Identity Provider
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-service-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Service Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-allow-workload-identity-pool-to-impersonate-service-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Allow Workload Identity Pool to Impersonate Service Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-get-workload-identity-provider-resource-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Get Workload Identity Provider Resource Name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-update-github-actions-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Update GitHub Actions Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-permission-denied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Permission denied"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-invalid-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Invalid token"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-workload-identity-pool-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Workload identity pool not found"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1329,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -1357,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -1385,7 +1618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -1413,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -1441,7 +1674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -1481,29 +1714,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -1521,7 +1749,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1589,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-core/" class="md-nav__link">
+      <a href="../../../ru/infra-core/" class="md-nav__link">
         
   
   
@@ -1617,7 +1845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-template/" class="md-nav__link">
+      <a href="../../../ru/infra-template/" class="md-nav__link">
         
   
   
@@ -1645,7 +1873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-ci/" class="md-nav__link">
+      <a href="../../../ru/infra-ci/" class="md-nav__link">
         
   
   
@@ -1731,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+      <a href="../../../ru/aws/" class="md-nav__link">
         
   
   
@@ -1809,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/" class="md-nav__link">
+      <a href="../../../ru/gcp/" class="md-nav__link">
         
   
   
@@ -1837,7 +2065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/vm/" class="md-nav__link">
+      <a href="../../../ru/gcp/vm/" class="md-nav__link">
         
   
   
@@ -1865,7 +2093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/db/" class="md-nav__link">
+      <a href="../../../ru/gcp/db/" class="md-nav__link">
         
   
   
@@ -1893,7 +2121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/k8s/" class="md-nav__link">
+      <a href="../../../ru/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -1929,7 +2157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-network/" class="md-nav__link">
+      <a href="../../../ru/infra-network/" class="md-nav__link">
         
   
   
@@ -2015,7 +2243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-monitoring/" class="md-nav__link">
+      <a href="../../../ru/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -2043,7 +2271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-secrets/" class="md-nav__link">
+      <a href="../../../ru/infra-secrets/" class="md-nav__link">
         
   
   
@@ -2071,7 +2299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-k8s/" class="md-nav__link">
+      <a href="../../../ru/infra-k8s/" class="md-nav__link">
         
   
   
@@ -2157,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/aws-dev/" class="md-nav__link">
+      <a href="../../../ru/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -2190,8 +2418,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2202,11 +2428,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -2227,7 +2453,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2242,35 +2468,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tailscale
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../ru/tailscale/" class="md-nav__link">
         
   
   
@@ -2286,35 +2487,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tailscale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ячеистая сеть Tailscale
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2327,7 +2499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -2405,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/aws-oidc.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/aws-oidc.md" class="md-nav__link">
         
   
   
@@ -2433,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/aws-static-keys.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/aws-static-keys.md" class="md-nav__link">
         
   
   
@@ -2461,7 +2633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/gcp-wif.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/gcp-wif.md" class="md-nav__link">
         
   
   
@@ -2555,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -2583,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -2611,7 +2783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -2639,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -2667,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -2810,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-core/" class="md-nav__link">
+      <a href="../../../pl/infra-core/" class="md-nav__link">
         
   
   
@@ -2838,7 +3010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-template/" class="md-nav__link">
+      <a href="../../../pl/infra-template/" class="md-nav__link">
         
   
   
@@ -2866,7 +3038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-ci/" class="md-nav__link">
+      <a href="../../../pl/infra-ci/" class="md-nav__link">
         
   
   
@@ -2952,7 +3124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/aws/" class="md-nav__link">
+      <a href="../../../pl/aws/" class="md-nav__link">
         
   
   
@@ -3030,7 +3202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/" class="md-nav__link">
+      <a href="../../../pl/gcp/" class="md-nav__link">
         
   
   
@@ -3058,7 +3230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/vm/" class="md-nav__link">
+      <a href="../../../pl/gcp/vm/" class="md-nav__link">
         
   
   
@@ -3086,7 +3258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/db/" class="md-nav__link">
+      <a href="../../../pl/gcp/db/" class="md-nav__link">
         
   
   
@@ -3114,7 +3286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/k8s/" class="md-nav__link">
+      <a href="../../../pl/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -3150,7 +3322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-network/" class="md-nav__link">
+      <a href="../../../pl/infra-network/" class="md-nav__link">
         
   
   
@@ -3236,7 +3408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-monitoring/" class="md-nav__link">
+      <a href="../../../pl/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -3264,7 +3436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-secrets/" class="md-nav__link">
+      <a href="../../../pl/infra-secrets/" class="md-nav__link">
         
   
   
@@ -3292,7 +3464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-k8s/" class="md-nav__link">
+      <a href="../../../pl/infra-k8s/" class="md-nav__link">
         
   
   
@@ -3378,7 +3550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/examples/aws-dev/" class="md-nav__link">
+      <a href="../../../pl/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -3464,7 +3636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/tailscale/" class="md-nav__link">
+      <a href="../../../pl/tailscale/" class="md-nav__link">
         
   
   
@@ -3492,7 +3664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -3570,7 +3742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/secure-access/aws-oidc.md" class="md-nav__link">
+      <a href="../../../pl/secure-access/aws-oidc.md" class="md-nav__link">
         
   
   
@@ -3598,7 +3770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/secure-access/gcp-wif/" class="md-nav__link">
+      <a href="../../../pl/secure-access/gcp-wif/" class="md-nav__link">
         
   
   
@@ -3692,7 +3864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -3720,7 +3892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -3748,7 +3920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -3776,7 +3948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -3804,7 +3976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -3865,13 +4037,185 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tailscale" class="md-nav__link">
+  <a href="#secure-gcp-access-with-workload-identity-federation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ячеистая сеть Tailscale
+        Secure GCP Access with Workload Identity Federation
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Secure GCP Access with Workload Identity Federation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-enable-required-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Enable Required APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-workload-identity-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create Workload Identity Pool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-workload-identity-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Create Workload Identity Provider
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-service-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Service Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-allow-workload-identity-pool-to-impersonate-service-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Allow Workload Identity Pool to Impersonate Service Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-get-workload-identity-provider-resource-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Get Workload Identity Provider Resource Name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-update-github-actions-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Update GitHub Actions Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-permission-denied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Permission denied"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-invalid-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Invalid token"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-workload-identity-pool-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Workload identity pool not found"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3895,10 +4239,118 @@
   
 
 
-  <h1>Tailscale</h1>
+  <h1>GCP WIF</h1>
 
-<h2 id="tailscale">Ячеистая сеть Tailscale</h2>
-<p>Документация по ячеистой сети Tailscale.</p>
+<h2 id="secure-gcp-access-with-workload-identity-federation">Secure GCP Access with Workload Identity Federation</h2>
+<p>This method is <strong>recommended</strong> for setting up CI/CD (e.g., GitHub Actions) and allows you to obtain temporary GCP credentials without needing to store long-lived service account keys.</p>
+<h3 id="how-it-works">How It Works</h3>
+<ol>
+<li><strong>GitHub</strong> generates a unique OIDC token for each run of your workflow.</li>
+<li><strong>GCP IAM</strong> trusts GitHub as an identity provider through Workload Identity Federation.</li>
+<li>GitHub Action passes its OIDC token to GCP.</li>
+<li><strong>GCP STS</strong> validates the token and, if valid, issues temporary credentials to your workflow to impersonate the specified service account.</li>
+</ol>
+<h3 id="step-by-step-setup">Step-by-Step Setup</h3>
+<h4 id="step-1-enable-required-apis">Step 1: Enable Required APIs</h4>
+<pre><code class="language-bash">gcloud services enable iamcredentials.googleapis.com
+gcloud services enable sts.googleapis.com
+</code></pre>
+<h4 id="step-2-create-workload-identity-pool">Step 2: Create Workload Identity Pool</h4>
+<pre><code class="language-bash">gcloud iam workload-identity-pools create &quot;github-pool&quot; \
+  --project=&quot;YOUR_PROJECT_ID&quot; \
+  --location=&quot;global&quot; \
+  --display-name=&quot;GitHub Actions Pool&quot;
+</code></pre>
+<h4 id="step-3-create-workload-identity-provider">Step 3: Create Workload Identity Provider</h4>
+<pre><code class="language-bash">gcloud iam workload-identity-pools providers create-oidc &quot;github-provider&quot; \
+  --project=&quot;YOUR_PROJECT_ID&quot; \
+  --location=&quot;global&quot; \
+  --workload-identity-pool=&quot;github-pool&quot; \
+  --display-name=&quot;GitHub Provider&quot; \
+  --attribute-mapping=&quot;google.subject=assertion.sub,attribute.actor=assertion.actor,attribute.repository=assertion.repository&quot; \
+  --issuer-uri=&quot;https://token.actions.githubusercontent.com&quot;
+</code></pre>
+<h4 id="step-4-create-service-account">Step 4: Create Service Account</h4>
+<pre><code class="language-bash">gcloud iam service-accounts create github-actions-sa \
+  --project=&quot;YOUR_PROJECT_ID&quot; \
+  --display-name=&quot;GitHub Actions Service Account&quot;
+</code></pre>
+<p>Grant necessary permissions to the service account:</p>
+<pre><code class="language-bash">gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
+  --member=&quot;serviceAccount:github-actions-sa@YOUR_PROJECT_ID.iam.gserviceaccount.com&quot; \
+  --role=&quot;roles/editor&quot;
+</code></pre>
+<h4 id="step-5-allow-workload-identity-pool-to-impersonate-service-account">Step 5: Allow Workload Identity Pool to Impersonate Service Account</h4>
+<pre><code class="language-bash">gcloud iam service-accounts add-iam-policy-binding \
+  github-actions-sa@YOUR_PROJECT_ID.iam.gserviceaccount.com \
+  --project=&quot;YOUR_PROJECT_ID&quot; \
+  --role=&quot;roles/iam.workloadIdentityUser&quot; \
+  --member=&quot;principalSet://iam.googleapis.com/projects/PROJECT_NUMBER/locations/global/workloadIdentityPools/github-pool/attribute.repository/v-grand/YOUR_REPO&quot;
+</code></pre>
+<p><strong>Important</strong>: Replace <code>PROJECT_NUMBER</code> with your GCP project number (not ID) and <code>v-grand/YOUR_REPO</code> with your repository.</p>
+<h4 id="step-6-get-workload-identity-provider-resource-name">Step 6: Get Workload Identity Provider Resource Name</h4>
+<pre><code class="language-bash">gcloud iam workload-identity-pools providers describe &quot;github-provider&quot; \
+  --project=&quot;YOUR_PROJECT_ID&quot; \
+  --location=&quot;global&quot; \
+  --workload-identity-pool=&quot;github-pool&quot; \
+  --format=&quot;value(name)&quot;
+</code></pre>
+<p>Save this value - you'll need it in your GitHub Actions workflow.</p>
+<h4 id="step-7-update-github-actions-workflow">Step 7: Update GitHub Actions Workflow</h4>
+<pre><code class="language-yaml">name: Deploy to GCP via WIF
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy to GCP
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required to obtain OIDC token
+      contents: read
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v1
+      with:
+        workload_identity_provider: 'projects/PROJECT_NUMBER/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
+        service_account: 'github-actions-sa@YOUR_PROJECT_ID.iam.gserviceaccount.com'
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+
+    - name: Use gcloud CLI
+      run: gcloud info
+</code></pre>
+<h3 id="security-best-practices">Security Best Practices</h3>
+<ol>
+<li><strong>Restrict by repository</strong>: Use attribute conditions to limit access to specific repositories</li>
+<li><strong>Restrict by branch</strong>: Add branch conditions in the attribute mapping</li>
+<li><strong>Least privilege</strong>: Grant only necessary permissions to the service account</li>
+<li><strong>Audit logs</strong>: Enable and monitor Cloud Audit Logs for service account usage</li>
+</ol>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<h4 id="error-permission-denied">Error: "Permission denied"</h4>
+<ul>
+<li>Verify the service account has necessary permissions</li>
+<li>Check that the workload identity pool binding is correct</li>
+</ul>
+<h4 id="error-invalid-token">Error: "Invalid token"</h4>
+<ul>
+<li>Ensure <code>id-token: write</code> permission is set in the workflow</li>
+<li>Verify the issuer URI is correct</li>
+</ul>
+<h4 id="error-workload-identity-pool-not-found">Error: "Workload identity pool not found"</h4>
+<ul>
+<li>Check that the pool and provider names match exactly</li>
+<li>Verify the project ID and number are correct</li>
+</ul>
+<p>Now you no longer need service account key files in your repository!</p>
 
 
 
@@ -3948,10 +4400,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
