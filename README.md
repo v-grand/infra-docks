@@ -32,6 +32,7 @@ A comprehensive audit of all 10 infra-* repositories has been completed with exc
 - **[infra-network](https://github.com/v-grand/infra-network)** - VPC, VPN, Tailscale networking
 
 ### Platform Services
+- **[infra-deployer](https://github.com/v-grand/infra-deployer)** - Automated infrastructure deployment service
 - **[infra-monitoring](https://github.com/v-grand/infra-monitoring)** - Prometheus, Grafana, Loki
 - **[infra-secrets](https://github.com/v-grand/infra-secrets)** - Vault, SOPS, secrets management
 - **[infra-k8s](https://github.com/v-grand/infra-k8s)** - Kubernetes clusters (GKE, EKS, K3s)
@@ -116,8 +117,8 @@ mkdocs serve
 
 ## 📊 Repository Statistics
 
-- **Total Repositories:** 10
-- **Active Repositories:** 9
+- **Total Repositories:** 11
+- **Active Repositories:** 10
 - **Documentation Pages:** 15+ (EN)
 - **Terraform Modules:** 25+
 - **Languages:** 3 (EN, RU, PL)

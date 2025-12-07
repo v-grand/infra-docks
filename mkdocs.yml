@@ -29,6 +29,7 @@ nav:
         - 'K8s': 'en/gcp/k8s.md'
       - 'Network': 'en/infra-network.md'
     - 'Platform Services':
+      - 'Infra Deployer': 'en/infra-deployer.md'
       - 'Monitoring': 'en/infra-monitoring.md'
       - 'Secrets Management': 'en/infra-secrets.md'
       - 'Kubernetes': 'en/infra-k8s.md'
@@ -36,7 +37,6 @@ nav:
       - 'AWS Dev': 'en/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'en/tailscale.md'
-      - 'Infra Deployer': 'docs/infra-deployer.md'
       - 'Secure Access':
         - 'AWS OIDC': 'en/secure-access/aws-oidc.md'
         - 'GCP WIF': 'en/secure-access/gcp-wif.md'
@@ -61,6 +61,7 @@ nav:
         - 'K8s': 'ru/gcp/k8s.md'
       - 'Network': 'ru/infra-network.md'
     - 'Platform Services':
+      - 'Infra Deployer': 'en/infra-deployer.md' # Needs translation
       - 'Monitoring': 'ru/infra-monitoring.md'
       - 'Secrets Management': 'ru/infra-secrets.md'
       - 'Kubernetes': 'ru/infra-k8s.md'
@@ -68,7 +69,6 @@ nav:
       - 'AWS Dev': 'ru/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'ru/tailscale.md'
-      - 'Infra Deployer': 'docs/infra-deployer.md'
       - 'Безопасный доступ':
         - 'AWS OIDC': 'ru/secure-access/aws-oidc.md'
         - 'AWS Static Keys': 'ru/secure-access/aws-static-keys.md'
@@ -94,6 +94,7 @@ nav:
         - 'K8s': 'pl/gcp/k8s.md'
       - 'Network': 'pl/infra-network.md'
     - 'Platform Services':
+      - 'Infra Deployer': 'en/infra-deployer.md' # Needs translation
       - 'Monitoring': 'pl/infra-monitoring.md'
       - 'Secrets Management': 'pl/infra-secrets.md'
       - 'Kubernetes': 'pl/infra-k8s.md'
@@ -101,7 +102,6 @@ nav:
       - 'AWS Dev': 'pl/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'pl/tailscale.md'
-      - 'Infra Deployer': 'docs/infra-deployer.md'
       - 'Bezpieczny dostęp':
         - 'AWS OIDC': 'pl/secure-access/aws-oidc.md'
         - 'GCP WIF': 'pl/secure-access/gcp-wif.md'
