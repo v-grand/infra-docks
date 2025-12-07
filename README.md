@@ -23,6 +23,7 @@ A comprehensive audit of all 10 infra-* repositories has been completed with exc
 ### Core Libraries
 - **[infra-core](https://github.com/v-grand/infra-core)** - Reusable Terraform modules (VM, VPC, DB, K8s)
 - **[infra-template](https://github.com/v-grand/infra-template)** - Standardized project template
+- **[template-frontend](https://github.com/v-grand/template-frontend)** - Standardized frontend project template
 - **[infra-ci](https://github.com/v-grand/infra-ci)** - Reusable GitHub Actions workflows
 - **[infra-docs](https://github.com/v-grand/infra-docs)** - This documentation site
 
@@ -32,7 +33,7 @@ A comprehensive audit of all 10 infra-* repositories has been completed with exc
 - **[infra-network](https://github.com/v-grand/infra-network)** - VPC, VPN, Tailscale networking
 
 ### Platform Services
-- **[infra-deployer](https://github.com/v-grand/infra-deployer)** - Automated infrastructure deployment service
+- **[infra-deployer](https://github.com/v-grand/infra-deployer)** - Template for infrastructure deployment services using `infra-*` modules (CLI/API)
 - **[infra-monitoring](https://github.com/v-grand/infra-monitoring)** - Prometheus, Grafana, Loki
 - **[infra-secrets](https://github.com/v-grand/infra-secrets)** - Vault, SOPS, secrets management
 - **[infra-k8s](https://github.com/v-grand/infra-k8s)** - Kubernetes clusters (GKE, EKS, K3s)
@@ -117,7 +118,7 @@ mkdocs serve
 
 ## 📊 Repository Statistics
 
-- **Total Repositories:** 11
+- **Total Repositories:** 12
 - **Active Repositories:** 10
 - **Documentation Pages:** 15+ (EN)
 - **Terraform Modules:** 25+
