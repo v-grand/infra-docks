@@ -1,3 +1,9 @@
 [submodule "infra-deployer"]
 	path = infra-deployer
 	url = https://github.com/v-grand/infra-deployer
+[submodule "template-platform"]
+	path = template-platform
+	url = https://github.com/v-grand/template-platform.git
+[submodule "infra-ci"]
+	path = infra-ci
+	url = https://github.com/v-grand/infra-ci.git

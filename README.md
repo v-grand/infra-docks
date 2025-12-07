@@ -24,6 +24,7 @@ A comprehensive audit of all 10 infra-* repositories has been completed with exc
 - **[infra-core](https://github.com/v-grand/infra-core)** - Reusable Terraform modules (VM, VPC, DB, K8s)
 - **[infra-template](https://github.com/v-grand/infra-template)** - Standardized project template
 - **[template-frontend](https://github.com/v-grand/template-frontend)** - Standardized frontend project template
+- **[template-platform](https://github.com/v-grand/template-platform)** - Microservice platform template
 - **[infra-ci](https://github.com/v-grand/infra-ci)** - Reusable GitHub Actions workflows
 - **[infra-docs](https://github.com/v-grand/infra-docs)** - This documentation site
 
@@ -118,8 +119,8 @@ mkdocs serve
 
 ## 📊 Repository Statistics
 
-- **Total Repositories:** 12
-- **Active Repositories:** 10
+- **Total Repositories:** 13
+- **Active Repositories:** 11
 - **Documentation Pages:** 15+ (EN)
 - **Terraform Modules:** 25+
 - **Languages:** 3 (EN, RU, PL)
